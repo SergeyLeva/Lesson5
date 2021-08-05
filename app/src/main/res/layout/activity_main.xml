@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0ABA7"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/right_up_image"
+        android:layout_width="224dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/left_bottom_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pic2" />
+
+    <ImageView
+        android:id="@+id/left_bottom_image"
+        android:layout_width="313dp"
+        android:layout_height="303dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic3" />
+
+    <ImageView
+        android:id="@+id/right_bottom_image"
+        android:layout_width="284dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/pic4" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="115dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="56dp"
+        android:background="#000000"
+        android:text="Олег"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/right_up_image"
+        app:layout_constraintTop_toTopOf="@+id/right_up_image"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/third_text"
+        android:layout_width="136dp"
+        android:layout_height="57dp"
+        android:background="#2E2E2E"
+        android:backgroundTint="#000000"
+        android:text="Марина"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/right_bottom_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/left_bottom_image"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/forth_text"
+        android:layout_width="107dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="160dp"
+        android:background="#000000"
+        android:text="Зотович"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/right_bottom_image"
+        app:layout_constraintTop_toTopOf="@+id/right_bottom_image" />
+
+    <ImageView
+        android:id="@+id/up_image"
+        android:layout_width="171dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/pic1" />
+
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="116dp"
+        android:background="#000000"
+        android:text="Маша"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/up_image"
+        app:layout_constraintTop_toTopOf="@+id/up_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
